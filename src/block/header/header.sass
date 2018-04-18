@@ -1,0 +1,106 @@
+.header
+	&__row
+		display: flex
+		justify-content: space-between
+		margin: 15px 0 30px
+		&_2
+			padding-bottom: 20px
+	&__col
+		display: flex
+		width: 25%
+		&_2
+			justify-content: center
+			width: 35%
+		&_3
+			width: 15%
+			padding-top: 15px
+			white-space: nowrap
+			justify-content: flex-end
+			align-items: flex-start
+			text-align: right
+			flex-grow: 1
+		&_4
+			justify-content: flex-end
+			padding-top: 15px
+			.header
+				&__box
+					display: flex
+					flex-wrap: wrap
+					justify-content: flex-end
+					&_1
+						padding-right: 20px
+
+@media #{$pc}
+	.header
+		&__row
+			flex-wrap: wrap
+		&__col
+			width: 33%
+			&_3
+				width: 100%
+				order: 1
+			&_4
+				justify-content: flex-end
+				padding-top: 15px
+				.header
+					&__box
+						&_2
+							margin-right: 15px
+
+@media #{$tablet}
+	.header
+		&__row
+			&_2
+				margin: 0
+				padding: 0
+		&__col
+			&_1
+				width: 35%
+			&_2
+				width: 50%
+				order: 1
+				justify-content: flex-start
+			&_3
+				width: auto
+				order: 0
+				width: 25%
+				text-align: center
+			&_4
+				width: 40%
+
+@media #{$phone}
+	.header
+		&__col
+			width: 50%
+			justify-content: space-between
+			&_1
+				justify-content: flex-start
+				order: 1
+			&_2
+				justify-content: flex-start
+				order: 4
+				padding-right: 70px
+				box-sizing: border-box
+			&_3
+				justify-content: center
+				order: 2
+			&_4
+				justify-content: center
+				order: 3
+				padding: 0
+				.header__box_1
+					justify-content: flex-start
+
+@media #{$phone-mini}
+	.header
+		&__col
+			margin-bottom: 0
+			width: 100%
+			&_4
+				justify-content: flex-start
+				order: 1
+			&_2
+				order: 2
+				padding-right: 0
+			&_3
+				order: 3

@@ -1,0 +1,96 @@
+.contacts
+	display: inline-block
+	&_phone
+		position: relative
+		.contacts
+			&__item
+				display: flex
+				align-items: center
+				padding: 7px 0
+				white-space: nowrap
+				&_1
+					font-weight: bold
+					padding-left: 15px
+			&__link
+				text-decoration: none
+			&__drop-box
+				position: absolute
+				z-index: -1000
+				opacity: 0
+			&__item.active + .contacts__drop-box
+				z-index: 1000
+				opacity: 1
+				display: inline-block
+				padding: 23px 40px
+				box-shadow: 0 0 25px rgba(0, 0, 0, .2)
+				top: 50px
+				left: -35px
+				z-index: 1000
+				background: #fff
+				&::before
+					display: inline-block
+					position: absolute
+					top: -20px
+					right: 10px
+					content: ""
+					border: 10px solid transparent
+					border-bottom: 10px solid #fff
+					z-index: 1
+			&__icon
+				display: inline-block
+				background-size: contain
+				background-repeat: no-repeat
+				margin-right: 10px
+				&_arrow-bottom-circle
+					height: 20px
+					width: 20px
+					background-image: url(../img/icons/arrow-bottom-circle.svg)
+					margin-left: 5px
+					margin-right: 0px
+					cursor: pointer
+				&_phone
+					height: 20px
+					width: 20px
+					background-image: url(../img/icons/phone-black.svg)
+				&_mts
+					height: 25px
+					width: 25px
+					background-image: url(../img/icons/mts.svg)
+				&_kyivstar
+					height: 27px
+					width: 27px
+					background-image: url(../img/icons/kyivstar.svg)
+				&_life
+					height: 26px
+					width: 26px
+					background-image: url(../img/icons/life.svg)
+
+	&_phone-footer
+		.contacts
+			&__drop-box
+				top: -180px
+				left: -35px
+			&__item.active + .contacts__drop-box
+				top: -180px
+				left: -35px
+				&::before
+					display: none
+				&::after
+					display: inline-block
+					position: absolute
+					bottom: -20px
+					right: 10px
+					content: ""
+					border: 10px solid transparent
+					border-top: 10px solid #fff
+					z-index: 1
+
+	&_header-mail
+		width: 100%
+		text-align: right
+
+
+@media #{$phone}
+	.contacts
+		&_header-mail
+			text-align: left

@@ -1,0 +1,34 @@
+.list-news
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	width: 100%
+	&__item
+		border-top: 1px solid #fff
+		max-width: 366px
+		text-align: center
+		line-height: 1.5
+		box-sizing: border-box
+		padding: 30px 15px
+		cursor: pointer
+		transition-duration: .3s
+		&:hover
+			box-shadow: 0 15px 30px rgba(220,225,230, .5)
+			border-top: 1px solid $color-2
+			transition-duration: .3s
+			.list-news__link
+				color: $color-2
+	&__date
+		font-size: 14px
+		color: $color-4
+		margin-bottom: 15px
+	&__link
+		font-size: 16px
+		text-decoration: none
+
+
+@media #{$pc}
+	.list-news
+		justify-content: center
+		&__item
+			margin: 10px

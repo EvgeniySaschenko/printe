@@ -1,0 +1,57 @@
+.footer
+	background-color: $color-5
+	box-shadow: inset 0px 2px 2px rgba(0, 0, 0, .05)
+	padding: 20px 0 30px
+	&__row
+		width: 100%
+		display: flex
+		justify-content: space-between
+		align-items: stretch
+	&__col
+		width: 25%
+		min-height: 110px
+		box-sizing: border-box
+		display: flex
+		flex-wrap: wrap
+		align-content: space-between
+		&_4
+			justify-content: flex-end
+
+@media #{$pc}
+	.footer
+		&__row
+			flex-wrap: wrap
+			justify-content: space-between
+		&__col
+			align-items: center
+			&_1
+				flex-direction: column
+				order: 2
+				width: 35%
+			&_2
+				flex-direction: column
+				order: 3
+				width: 35%
+				text-align: center
+			&_3
+				flex-direction: column
+				order: 1
+				width: 100%
+			&_4
+				justify-content: flex-end
+				order: 4
+				width: 30%
+
+@media #{$phone}
+	.footer
+		&__col
+			text-align: center
+			justify-content: center
+			&_1
+				width: 100%
+			&_2
+				width: 100%
+			&_3
+				display: none
+			&_4
+				width: 100%

@@ -1,0 +1,92 @@
+.btn
+	display: inline-block
+
+	&_shopping-cart
+		position: relative
+		.btn
+			&__icon
+				display: inline-block
+				background-size: contain
+				background-repeat: no-repeat
+				height: 44px
+				width: 44px
+				background-image: url(../img/icons/shopping-cart.svg)
+			&__cout
+				display: flex
+				justify-content: center
+				align-items: center
+				color: #ffffff
+				background: $color-2
+				border-radius: 50%
+				height: 30px
+				width: 30px
+				position: absolute
+				top: -10px
+				right: -15px
+
+	&_order-bye
+		padding: 15px 50px
+		background-color: $color-2
+		&:visited,
+		&:link,
+		&:active,
+		&:hover
+			text-decoration: none
+			color: #fff
+			font-size: 16px
+	&_callback-production
+		top: -84px
+		right: -138px
+	&_callback-news
+		bottom: -54px
+		right: -138px
+	&_callback
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		color: #ffffff
+		background: $color-2
+		border-radius: 50%
+		height: 108px
+		width: 108px
+		font-size: 14px
+		position: absolute
+		transition-duration: .3s
+		&:hover
+			box-shadow: 0 0 15px rgba($color-2, .5)
+			transition-duration: .3s
+		.btn
+			&__icon
+				display: inline-block
+				background-size: contain
+				background-repeat: no-repeat
+				height: 20px
+				width: 20px
+				background-image: url(../img/icons/phone-white.svg)
+				margin-bottom: 5px
+
+	&_see-all-news
+		padding: 8px 23px
+		border: 1px solid $color-2
+		border-radius: 3px
+		&:visited,
+		&:link,
+		&:active,
+		&:hover
+			text-decoration: none
+			color: $color-2
+
+
+@media (max-width: 1500px)
+	.btn
+		&_callback
+			position: static
+			margin: 30px auto
+
+@media #{$phone}
+	.btn
+		&_shopping-cart
+			position: fixed
+			top: 15px
+			right: 25px

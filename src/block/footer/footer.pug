@@ -1,0 +1,62 @@
+mixin b-footer()
+	+b.FOOTER.footer
+		.container
+			+e.row
+				+e.col_1
+					+b.logo_footer
+						+e.A.link(href="#")
+							+e.IMG.img(src="img/logo.svg")
+					+b.text-box_footer-copyright
+						+e.text 2018 — Все права защищены
+
+				+e.col_2
+					+b.text-box_footer-regime
+						+e.P.text_1 Качественная оперативная цифровая, широкоформатная и сувенирная полиграфия!
+						+e.P.text_2 Работаем с 9 до 18, вс и сб выходные
+
+				+e.col_3
+					+b.NAV.nav(class="_footer-1")
+						+e.UL.list#nav-list_footer-1
+							+e.LI.item
+								+e.A.link(href="#") Главная
+							+e.LI.item
+								+e.A.link(href="#") Новости
+							+e.LI.item
+								+e.A.link(href="#") Продукция
+							+e.LI.item
+								+e.A.link(href="#") База знаний
+							+e.LI.item
+								+e.A.link(href="#") Доставка и оплата
+							+e.LI.item
+								+e.A.link(href="#") О нас
+
+				+e.col_4
+					+b.social-btn(class="_footer")
+						+e.A.link_facebook(href="#")
+							+e.I.icon_facebook
+
+					+b.contacts_phone(class="_phone-footer")
+						+e.item_1
+							+e.I.icon_phone
+							+e.A.link(href="tel:380443454042") (044) 345-40-42
+							+e.I.icon_arrow-bottom-circle.show-contacts_phone
+						+e.drop-box.active
+							+e.item_2
+								+e.I.icon_mts
+								+e.A.link(href="tel:380994455418") (099) 445-54-18
+							+e.item_3
+								+e.I.icon_kyivstar
+								+e.A.link(href="tel:380964977803") (096) 497-78-03
+							+e.item_4
+								+e.I.icon_life
+								+e.A.link(href="tel:38634351681") (063) 435-16-81
+
+					+b.NAV.nav(class="_footer-2")
+						+e.UL.list#nav-list_footer-2
+							+e.LI.item
+								+e.A.link(href="#") Контакты
+
+					+b.text-box_development
+						+e.I.icon_glyanec
+						+e.A.link(href="#")
+							+e.SPAN.text Глянец — Разработка сайтов

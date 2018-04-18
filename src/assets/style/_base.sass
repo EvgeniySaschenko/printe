@@ -1,0 +1,56 @@
+@font-face 
+	font-family: 'Clear Sans'
+	src: url(../fonts/ClearSans-Regular.ttf)
+
+@font-face 
+	font-family: 'Clear Sans Bold'
+	src: url(../fonts/ClearSans-Bold.ttf)
+
+@import url('https://fonts.googleapis.com/css?family=Cuprum&subset=cyrillic')
+// font-family: 'Cuprum', sans-serif;
+
+	
+body
+	color: #000000
+	font-family: 'Clear Sans', sans-serif
+	font-size: 16px
+	font-weight: 400
+	line-height: 1
+	color: $color-1
+
+a
+	font-size: 14px
+	&:visited,
+	&:link
+		color: $color-1
+	&:active,
+	&:hover
+		color: $color-2
+		transition-duration: .3s
+
+button,
+input[type="checkbox"]
+	border: none
+	outline: none
+
+button,
+input[type="submit"]
+	cursor: pointer
+
+.wrapper
+	margin: 0 auto
+	background-color: auto
+	background-position: 50% 0
+	position: relative
+
+.container
+	max-width: 1200px
+	width: 100%
+	margin: 0 auto
+	position: relative
+	padding: 0 15px
+	box-sizing: border-box
+
+@media #{$phone}
+	.container
+		padding: 0 10px

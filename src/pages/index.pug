@@ -1,0 +1,96 @@
+extends ../layout/root
+block title 
+	title Doc title
+block meta_k 
+	meta(name="keywords" content="meta_k .........text")
+block meta_d 
+	meta(name="description" content="meta_d ......text")
+
+block main
+	// Home
+	+b.SECTION.section_home(id="home")
+		.container
+			+e.row
+				+e.H1.title Оперативная печать полиграфии от 1 дня!
+				+e.text Доставка в любой город Украины
+				+b.A.btn_order-bye(href="#") Сделать заказ
+
+	// Production
+	+b.SECTION.section_production(id="production")
+		.container
+			+b.BUTTON.btn_callback(class="_callback-production")
+				+e.I.icon_phone-white
+				+e.SPAN.text Перезвоните <br> мне сейчас!
+			+e.H2.title Продукция
+			+b.list-product-type
+				+e.item_1
+					+e.col_1
+						+e.icon_blank-page
+					+e.col_2
+						+e.H4.title Офисная продукция
+						+e.name Визитки
+						+e.name Конверты
+						+e.name Папки
+						+e.name Книги
+						+e.name Блокноты
+						+e.name Фирменные бланки
+
+				+e.item_2
+					+e.col_1
+						+e.icon_road-map
+					+e.col_2
+						+e.H4.title Рекламная продукция
+						+e.name Листовки
+						+e.name Плакаты
+						+e.name Флаера
+						+e.name Баннеры
+						+e.name Буклеты
+						+e.name Магниты
+						+e.name Календари
+						+e.name Наклейки 
+						+e.name Блокноты
+
+				+e.item_3
+					+e.col_1
+						+e.icon_e-reader
+					+e.col_2
+						+e.H4.title Для бизнеса
+						+e.name Каталоги
+						+e.name Журналы
+						+e.name Дисконтные карты
+						+e.name Бейджи
+						+e.name Гарантиныйные наклейки
+
+	// About
+	+b.SECTION.section_about(id="about")
+		.container
+			+e.H2.title О нас
+			+b.text-box_about
+				+e.H4.title Оперативная печать полиграфии от 1 дня!
+				+e.P.text Перед долгим заплывом намажьтесь солнцезащитным кремом. Вода не спасает от вредного излучения, оно проникает и на глубину 1 м.
+				+e.P.text Прежде чем отправиться на пляж, съешьте что-нибудь солененькое или выпейте чай с лимоном. Считается, что тем самым вы предотвратите потерю важных минеральных веществ, которые покидают тело вместе с потом, а загар при этом ляжет ровнее. Находясь на солнце, следует больше двигаться — плавать, делать гимнастику, играть в мяч и т.д. 
+				+e.P.text Лучше ходить босиком, чем в тапочках. Не рекомендуется покрывать ногти лаком, пусть они отдохнут и получат солнечные лучи и воздух.
+
+	// News
+	+b.SECTION.section_news(id="news")
+		.container
+			+e.H2.title Новости
+			+e.row_1
+				+b.list-news
+					+e.item 
+						+e.date 14 марта 2018
+						+e.H4.title 
+							+e.A.link(href="#") Оазисное земледелие поднимает культурный субэкваториальный климат, там же можно с палками
+					+e.item
+						+e.date 14 марта 2018
+						+e.H4.title 
+							+e.A.link(href="#") Оазисное земледелие поднимает культурный субэкваториальный климат, там же можно с палками
+					+e.item 
+						+e.date 14 марта 2018
+						+e.H4.title 
+							+e.A.link(href="#") Оазисное земледелие поднимает культурный субэкваториальный климат, там же можно с палками
+			+e.row_2
+				+b.A.btn_see-all-news(href="#") Смотреть все новости
+			+b.BUTTON.btn_callback(class="_callback-news")
+				+e.I.icon_phone-white
+				+e.SPAN.text Перезвоните <br> мне сейчас!

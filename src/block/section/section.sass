@@ -1,0 +1,73 @@
+.section
+	&__title
+		font-size: 36px
+		text-align: center
+
+
+	&_home
+		text-align: center
+		background-image: url(../img/home.png)
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: 50%
+		color: #fff
+		.section
+			&__row
+				display: flex
+				width: 100%
+				min-height: 500px
+				align-items: center
+				justify-content: center
+				flex-direction: column
+			&__title
+				font-size: 57px
+				width: 100%
+				font-family: 'Clear Sans Bold'
+				&::after
+					content: ""
+					width: 120px
+					display: block
+					margin: 0 auto
+					border-bottom: 2px solid #FFFFFF
+					padding-top: 25px
+			&__text
+				padding-top: 25px
+				font-size: 24px
+				margin-bottom: 25px
+
+	&_home
+		.section
+			&__title
+				margin-top: 30px
+
+	&_production
+		.section
+			&__title
+				margin: 30px 0 50px
+
+
+	&_about
+		padding-bottom: 35px
+		border-bottom: 1px solid $color-3
+		.section
+			&__title
+				margin: 40px 0 15px
+
+	&_news
+		.section
+			&__title
+				margin: 40px 0 50px
+			&__row
+				display: flex
+				width: 100%
+				justify-content: center
+				&_1,
+				&_2	
+					padding-bottom: 50px
+
+@media #{$phone-mini}
+	.section
+		&_home
+			.section
+				&__title
+					font-size: 45px

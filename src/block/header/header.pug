@@ -1,0 +1,76 @@
+mixin b-header()
+	+b.HEADER.header
+		.container
+			+e.row_1
+
+				+e.col_1
+					+b.logo_header
+						+e.A.link(href="#")
+							+e.IMG.img(src="img/logo.svg")
+
+				+e.col_2
+					+b.text-box_header-regime
+						+e.P.text_1 Качественная оперативная цифровая, <br> широкоформатная и сувенирная полиграфия!
+						+e.P.text_2 Работаем с 9 до 18, вс и сб выходные
+
+				+e.col_3
+					+b.text-box_header-private-room
+						+e.I.icon_user
+						+e.A.link(href="#")
+							+e.SPAN.text Личный кабинет
+
+				+e.col_4
+					+e.box_1
+						+b.contacts_header-mail
+							+e.item
+								+e.A.link(href="mailto:maket@test-vertka.ua") maket@test-vertka.ua
+
+						+b.social-btn
+							+e.A.link_facebook(href="#")
+								+e.I.icon_facebook
+
+						+b.contacts_phone
+							+e.item_1
+								+e.I.icon_phone
+								+e.A.link(href="tel:380443454042") (044) 345-40-42
+								+e.I.icon_arrow-bottom-circle.show-contacts_phone
+							+e.drop-box
+								+e.item_2
+									+e.I.icon_mts
+									+e.A.link(href="tel:380994455418") (099) 445-54-18
+								+e.item_3
+									+e.I.icon_kyivstar
+									+e.A.link(href="tel:380964977803") (096) 497-78-03
+								+e.item_4
+									+e.I.icon_life
+									+e.A.link(href="tel:38634351681") (063) 435-16-81
+					+e.box_2
+						+b.A.btn_shopping-cart(href="#")
+							+e.I.icon_shopping-cart
+							+e.SPAN.cout 3
+
+		+e.row_2
+			.container
+				+b.NAV.nav(class="_header")
+					+e.btn-burger(id="nav__btn-burger_header")
+						+e.btn-burger-item
+						+e.btn-burger-item
+						+e.btn-burger-item
+						
+					+e.UL.list#nav-list_header
+						+e.LI.item
+							+e.A.link(href="#") Главная
+						+e.LI.item
+							+e.A.link(href="#") Продукция
+						+e.LI.item
+							+e.A.link(href="#") Доставка и оплата
+						+e.LI.item
+							+e.A.link(href="#") Новости
+						+e.LI.item
+							+e.A.link(href="#") База знаний
+						+e.LI.item
+							+e.A.link(href="#") О нас
+						+e.LI.item
+							+e.A.link(href="#") Контакты
+						+e.LI.item_search
+							+e.icon_search

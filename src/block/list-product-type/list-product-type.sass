@@ -1,0 +1,67 @@
+.list-product-type
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	&__item
+		display: flex
+		max-width: 370px
+		min-height: 290px
+		box-sizing: border-box
+		padding: 25px 30px
+		border: 1px solid $color-3
+	&__item_2
+		.list-product-type__name
+			width: 50%
+	&__col
+		display: flex
+		&_2
+			flex-wrap: wrap
+			justify-content: space-between
+			margin-left: 24px
+	&__title
+		font-family: 'Clear Sans Bold'
+		margin-bottom: 24px
+		text-transform: uppercase
+	&__name
+		font-size: 14px
+		width: 100%
+		margin-bottom: 15px
+	&__icon
+		display: inline-block
+		background-size: contain
+		background-repeat: no-repeat
+		opacity: .5
+		&.visible
+			opacity: 1
+		&_blank-page
+			background-image: url(../img/icons/blank-page.svg)
+			height: 62px
+			width: 57px
+		&_road-map
+			background-image: url(../img/icons/road-map.svg)
+			height: 62px
+			width: 62px
+		&_e-reader
+			background-image: url(../img/icons/e-reader.svg)
+			height: 62px
+			width: 46px
+
+@media #{$pc}
+	.list-product-type
+		justify-content: center
+		&__item
+			margin: 10px
+
+@media #{$phone-mini}
+	.list-product-type
+		&__item
+			flex-wrap: wrap
+		&__col
+			width: 100%
+			justify-content: center
+			&_1
+				margin-bottom: 15px
+			&_2
+				margin-left: 0
+		&__name
+			text-align: center

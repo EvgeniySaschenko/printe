@@ -1,0 +1,68 @@
+.text-box
+	&__icon
+		display: inline-block
+		background-size: contain
+		background-repeat: no-repeat
+
+	&_header-regime
+		line-height: 1.5
+		text-align: center
+		.text-box
+			&__text_2
+				font-size: 14px
+				font-weight: bold
+
+	&_header-private-room
+		font-size: 14px
+		display: flex
+		align-items: center
+		.text-box
+			&__icon_user
+				height: 13px
+				width: 12px
+				margin-right: 5px
+				background-image: url(../img/icons/user.svg)
+
+	&_about
+		.text-box
+			&__title
+				text-align: center
+				font-size: 24px
+				margin-bottom: 34px
+			&__text
+				font-size: 14px
+				text-align: justify
+				line-height: 1.5
+
+	&_footer-regime
+		text-align: left
+		line-height: 1.5
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+
+	&_development
+		display: flex
+		align-items: center
+		.text-box
+			&__icon
+				&_glyanec
+					height: 17px
+					width: 16px
+					background-image: url(../img/icons/glyanec.svg)
+			&__link
+				font-family: 'Cuprum'
+				font-size: 11px
+				text-transform: uppercase
+
+@media #{$tablet}
+	.text-box
+		&_footer-regime
+			text-align: center
+
+@media #{$phone}
+	.text-box
+		&_header-regime
+			.text-box
+				&__text_1
+					display: none
